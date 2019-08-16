@@ -793,7 +793,7 @@
 #define MIN_PROBE_EDGE 30
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 6000
+#define XY_PROBE_SPEED 4000
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z / 3
@@ -895,8 +895,8 @@
 #define X_MIN_POS -18
 #define Y_MIN_POS -23
 #define Z_MIN_POS 0
-#define X_MAX_POS 225
-#define Y_MAX_POS 225
+#define X_MAX_POS 240
+#define Y_MAX_POS 240
 #define Z_MAX_POS 316
 
 /**
@@ -1034,13 +1034,13 @@
 
   // Set the boundaries for probing (where the probe can reach).
   #define LEFT_PROBE_BED_POSITION 20
-  #define RIGHT_PROBE_BED_POSITION 200
+  #define RIGHT_PROBE_BED_POSITION 190
   #define FRONT_PROBE_BED_POSITION 20
-  #define BACK_PROBE_BED_POSITION 200
+  #define BACK_PROBE_BED_POSITION 190
   #define MIN_PROBE_X 20
-  #define MAX_PROBE_X 200
+  #define MAX_PROBE_X 190
   #define MIN_PROBE_Y 20
-  #define MAX_PROBE_Y 200
+  #define MAX_PROBE_Y 190
 
   // Probe along the Y axis, advancing X after each column
   //#define PROBE_Y_FIRST
@@ -1162,7 +1162,7 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (100*60)
+#define HOMING_FEEDRATE_XY (20*60)
 #define HOMING_FEEDRATE_Z  (4*60)
 
 // @section calibrate
